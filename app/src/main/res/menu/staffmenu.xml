@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/staff_issues"
+        android:icon="@drawable/baseline_complaints"
+        android:title="Raise Issues" />
+
+    <item
+        android:id="@+id/user_request"
+        android:icon="@drawable/baseline_staff"
+        android:title="User Request" />
+
+
+    <item
+        android:id="@+id/staff_home_logout"
+        android:icon="@drawable/baseline_logout"
+        android:title="Logout" />
+
+</menu>

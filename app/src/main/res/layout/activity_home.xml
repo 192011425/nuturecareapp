@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".homeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/homeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold">
+
+            </TextView>
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/hdc4"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+        <Button
+            android:id="@+id/service_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:layout_marginHorizontal="60dp"
+            android:backgroundTint="@color/blue"
+            android:text="Services"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <Button
+            android:id="@+id/status_btn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/blue"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Booking status"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/service_btn"
+            app:layout_constraintStart_toStartOf="@+id/service_btn"
+            app:layout_constraintTop_toBottomOf="@+id/service_btn" />
+
+        <Button
+            android:id="@+id/complaint_btn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/blue"
+            android:text="Complaints"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/status_btn"
+            app:layout_constraintStart_toStartOf="@+id/status_btn"
+            app:layout_constraintTop_toBottomOf="@+id/status_btn" />
+
+        <Button
+            android:id="@+id/emer_btn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/blue"
+            android:text="Emergency"
+            android:textColor="@color/white"
+            app:cornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/complaint_btn"
+            app:layout_constraintStart_toStartOf="@+id/complaint_btn"
+            app:layout_constraintTop_toBottomOf="@+id/complaint_btn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:itemIconTint="@color/blue"
+        app:itemTextColor="@color/blue"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/nav_menu"
+        >
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Home"
+        android:id="@+id/P"
+        />
+    <item
+        android:title="Add Category"
+        android:id="@+id/AB"
+        />
+    <item
+        android:title="Add Services"
+        android:id="@+id/QF"
+        />
+    <item
+        android:title="Add Details"
+        android:id="@+id/BS"
+        />
+    <item
+        android:title="Orders"
+        android:id="@+id/orders"
+        />
+
+
+</menu>

@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1019728767741",
+    "firebase_url": "https://nurture-care-default-rtdb.firebaseio.com",
+    "project_id": "nurture-care",
+    "storage_bucket": "nurture-care.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019728767741:android:4b3b9ab62b74926484ec94",
+        "android_client_info": {
+          "package_name": "com.example.nurturecareandroid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZMZ-VS4Un40QZetWJPFb25V2MwavAFVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019728767741:android:9666aeb7dc73bb5184ec94",
+        "android_client_info": {
+          "package_name": "com.example.signupandloginrealtime"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZMZ-VS4Un40QZetWJPFb25V2MwavAFVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

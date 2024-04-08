@@ -1,0 +1,9 @@
+<!-- res/drawable/custom_bg.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Set your desired background color -->
+    <corners
+        android:topLeftRadius="40dp"
+        android:topRightRadius="40dp"
+        android:bottomRightRadius="0dp"
+        android:bottomLeftRadius="0dp" />
+</shape>

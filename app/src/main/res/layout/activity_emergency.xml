@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    android:gravity="center"
+    tools:context=".emergencyActivity">
+F
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Emergency"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="416dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/custom_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:src="@drawable/emergency" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="15dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue"
+                    android:padding="15dp">
+
+                    <!-- Image -->
+
+                    <!-- Price -->
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Name"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/name"
+                        android:text=": DR.ABHIMANYU"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/name"
+                        app:layout_constraintStart_toEndOf="@+id/name"
+                        app:layout_constraintTop_toTopOf="@+id/name" />
+
+
+                    <TextView
+                        android:id="@+id/treatmentnames"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name"
+                        android:layout_marginTop="8dp"
+                        android:text="Treatment Name"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/name"
+                        app:layout_constraintTop_toBottomOf="@id/name" />
+
+                    <TextView
+                        android:id="@+id/treatmentnamen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/name1"
+                        android:layout_marginTop="8dp"
+                        android:text=": CRITICAL CARE"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@+id/name1"
+                        app:layout_constraintTop_toBottomOf="@+id/name1" />
+
+                    <TextView
+                        android:id="@+id/idNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/treatmentnames"
+                        android:layout_marginTop="8dp"
+                        android:text="Id No"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/treatmentnames"
+                        app:layout_constraintTop_toBottomOf="@id/treatmentnames" />
+
+                    <TextView
+                        android:id="@+id/idNumber1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/treatmentnamen"
+                        android:layout_marginTop="8dp"
+                        android:text=": B0031"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@+id/treatmentnamen"
+                        app:layout_constraintTop_toBottomOf="@+id/treatmentnamen" />
+
+                    <TextView
+                        android:id="@+id/contactno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/idNumber"
+                        android:layout_marginTop="8dp"
+                        android:text="Contact Number"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/idNumber"
+                        app:layout_constraintTop_toBottomOf="@id/idNumber" />
+
+                    <TextView
+                        android:id="@+id/contactno1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/idNumber1"
+                        android:layout_marginTop="8dp"
+                        android:text=": 099408 67945"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@+id/idNumber1"
+                        app:layout_constraintTop_toBottomOf="@+id/idNumber1" />
+
+                    <TextView
+                        android:id="@+id/gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/contactno"
+                        android:layout_marginTop="8dp"
+                        android:text="Gender"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/contactno"
+                        app:layout_constraintTop_toBottomOf="@id/contactno" />
+
+                    <TextView
+                        android:id="@+id/gender1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/contactno1"
+                        android:layout_marginTop="8dp"
+                        android:text=": Male"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@+id/contactno1"
+                        app:layout_constraintTop_toBottomOf="@+id/contactno1" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/gender"
+                        android:layout_marginTop="8dp"
+                        android:text="Address"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/gender"
+                        app:layout_constraintTop_toBottomOf="@id/gender" />
+
+                    <TextView
+                        android:id="@+id/address1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/gender1"
+                        android:layout_marginTop="8dp"
+                        android:gravity="start"
+                        android:text=": 26 Kamarajar Street, Tambaram, Tamil Nadu 600061."
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+
+                        app:layout_constraintStart_toStartOf="@+id/gender1"
+                        app:layout_constraintTop_toBottomOf="@+id/gender1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="15dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue"
+                    android:padding="15dp">
+
+                    <!-- Image -->
+
+                    <!-- Price -->
+                    <TextView
+                        android:id="@+id/names"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Name"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/names"
+                        android:text=": DR.Abhayabhimanyu birla"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/names"
+                        app:layout_constraintStart_toEndOf="@+id/names"
+                        app:layout_constraintTop_toTopOf="@+id/names" />
+
+
+                    <TextView
+                        android:id="@+id/treatmentname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name1"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Treatment Name"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/name"
+                        app:layout_constraintTop_toBottomOf="@id/name1" />
+
+                    <TextView
+                        android:id="@+id/treatmentname1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/name1"
+                        android:layout_marginTop="8dp"
+                        android:text=": CRITICAL CARE"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@+id/name1"
+                        app:layout_constraintTop_toBottomOf="@+id/name1" />
+
+                    <TextView
+                        android:id="@+id/idNumbero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/treatmentname"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Id No"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/treatmentname"
+                        app:layout_constraintTop_toBottomOf="@id/treatmentname" />
+
+                    <TextView
+                        android:id="@+id/idNumbers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/treatmentname1"
+                        android:layout_marginTop="8dp"
+                        android:text=": BA031"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@+id/treatmentname1"
+                        app:layout_constraintTop_toBottomOf="@+id/treatmentname1" />
+
+                    <TextView
+                        android:id="@+id/contactnos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/idNumbers"
+                        android:layout_marginTop="8dp"
+                        android:text="Contact Number"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/idNumbero"
+                        app:layout_constraintTop_toBottomOf="@id/idNumbero" />
+
+                    <TextView
+                        android:id="@+id/contactno2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/idNumbers"
+                        android:layout_marginTop="8dp"
+                        android:text=": 8806 9408 67945"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@+id/idNumbers"
+                        app:layout_constraintTop_toBottomOf="@+id/idNumbers" />
+
+                    <TextView
+                        android:id="@+id/gender3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/contactnos"
+                        android:layout_marginTop="8dp"
+                        android:text="Gender"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/contactnos"
+                        app:layout_constraintTop_toBottomOf="@id/contactnos" />
+
+                    <TextView
+                        android:id="@+id/genders"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/contactno2"
+                        android:layout_marginTop="8dp"
+                        android:text=": Male"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@+id/contactno2"
+                        app:layout_constraintTop_toBottomOf="@+id/contactno2" />
+
+                    <TextView
+                        android:id="@+id/addresss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/gender3"
+                        android:layout_marginTop="8dp"
+                        android:text="Address"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/gender3"
+                        app:layout_constraintTop_toBottomOf="@id/gender3" />
+
+                    <TextView
+                        android:id="@+id/address2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/genders"
+                        android:layout_marginTop="8dp"
+                        android:gravity="start"
+                        android:text=":Tambaram, Tamil Nadu 600061."
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@+id/genders"
+                        app:layout_constraintTop_toBottomOf="@+id/genders" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

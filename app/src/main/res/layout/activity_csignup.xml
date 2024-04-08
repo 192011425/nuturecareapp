@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    android:visibility="visible"
+    tools:context=".csignupActivity"
+    tools:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-40dp"
+            app:cardCornerRadius="60dp"
+            android:padding="28dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="28dp"
+                android:background="@color/white">
+
+
+
+                <TextView
+                    android:id="@+id/customerSign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SIGNUP"
+                    android:layout_marginTop="-15dp"
+                    android:textColor="@color/blue"
+                    android:textSize="30dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/cus_reg_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="username"
+                    android:background="@drawable/edit_text_blue_border"
+                    android:padding="8dp"
+                    android:textColor="@color/black">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/cus_reg_phoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Phone number"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edit_text_blue_border"
+                    android:padding="8dp">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/cus_reg_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Email"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edit_text_blue_border"
+                    android:padding="8dp">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/cus_reg_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="password"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edit_text_blue_border"
+                    android:padding="8dp">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/cus_reg_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Gender"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edit_text_blue_border"
+                    android:padding="8dp">
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/cus_reg_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:text="SIGNUP"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/blue"
+                    android:textSize="18dp">
+
+                </Button>
+
+                <TextView
+                    android:id="@+id/cus_log_link_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account?"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>
